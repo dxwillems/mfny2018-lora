@@ -37,8 +37,8 @@ void setup() {
     Serial.println("Failed to start LoRa");
     while (1) {}
   };
+  dht.begin();
   
-  Serial.print("Your module version is: ");
   Serial.println(modem.version());
   Serial.print("Your device EUI is: ");
   Serial.println(modem.deviceEUI());
